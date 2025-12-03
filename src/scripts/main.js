@@ -4,9 +4,9 @@ const mainImage = document.getElementById('largeImg');
 const gallery = document.getElementById('thumbs');
 
 gallery.addEventListener('click', function (e) {
-  event.preventDefault();
+  e.preventDefault();
 
-  let target = event.target;
+  let target = e.target;
 
   if (target.tagName === 'IMG') {
     target = target.parentNode;
